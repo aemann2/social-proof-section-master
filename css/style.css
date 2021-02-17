@@ -1,0 +1,134 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 500;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-top-desktop.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1300px;
+}
+
+.main__top, .main__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header__title {
+  color: #502050;
+  font-size: 3rem;
+}
+
+.header__sub {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.asides {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #502050;
+  font-weight: 700;
+}
+
+.aside {
+  background-color: #f7f2f7;
+}
+
+.card {
+  background-color: #502050;
+  border-radius: 10px;
+  color: white;
+  padding: 3rem;
+  margin: 4rem 0;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.card:nth-child(2) {
+  margin: 2rem 2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card:nth-child(3) {
+  margin: 0 0 1rem 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.card__header-img {
+  width: 3rem;
+  border-radius: 50%;
+  float: left;
+  margin: -0.3rem 2rem 0 0;
+}
+
+.card__header-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card__header-buyer {
+  color: #ee68a4;
+}
+
+.card__quote {
+  clear: left;
+  margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
