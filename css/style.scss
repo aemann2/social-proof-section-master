@@ -1,3 +1,35 @@
+// Variables //
+
+$magenta: rgb(80, 32, 80);
+$pink: rgb(238, 104, 164);
+$drk-gry-magenta: rgb(247, 242, 247);
+$lgt-gry-magenta: rgb(147, 123, 146);
+$white: white;
+
+// Globals //
+
 html {
+  box-sizing: border-box;
   font-size: 15px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 500;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
