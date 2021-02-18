@@ -29,8 +29,8 @@ html {
 body {
   position: relative;
   min-height: 100%;
-  background-image: url('/images/bg-pattern-top-desktop.svg'),
-    url('/images/bg-pattern-bottom-desktop.svg');
+  background-image: url('../images/bg-pattern-top-desktop.svg'),
+    url('../images/bg-pattern-bottom-desktop.svg');
   background-position: top left, bottom right;
   background-repeat: no-repeat;
 }
@@ -89,7 +89,7 @@ body {
   &__aside-stars::before {
     position: absolute;
     content: '';
-    background: url('/images/icon-star.svg');
+    background: url('../images/icon-star.svg');
     width: 100px;
     height: 20px;
     background-repeat: space;
@@ -173,7 +173,7 @@ body {
   }
 
   body {
-    background-image: url('/images/bg-pattern-top-mobile.svg');
+    background-image: url('../images/bg-pattern-top-mobile.svg');
   }
 
   .main {
