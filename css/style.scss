@@ -58,6 +58,7 @@ body {
   &__sub {
     margin-top: 1rem;
     line-height: 1.5rem;
+    color: $lgt-gry-magenta;
   }
 }
 
@@ -68,10 +69,37 @@ body {
   align-items: flex-end;
   color: $magenta;
   font-weight: 700;
-}
 
-.aside {
-  background-color: $drk-gry-magenta;
+  &__aside {
+    text-align: right;
+    background-color: $drk-gry-magenta;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  &__aside-stars {
+    position: relative;
+    float: left;
+    margin-right: 8em;
+  }
+
+  &__aside-stars::before {
+    position: absolute;
+    content: '';
+    background: url('/images/icon-star.svg');
+    width: 100px;
+    height: 20px;
+    background-repeat: space;
+  }
+
+  &__aside:first-child {
+    margin-right: 8rem;
+  }
+
+  &__aside:nth-child(2) {
+    margin-right: 4rem;
+  }
 }
 
 .card {
@@ -112,6 +140,7 @@ body {
   &__quote {
     clear: left;
     margin-top: 2rem;
+    color: $drk-gry-magenta;
   }
 }
 
