@@ -30,10 +30,12 @@ body {
   position: relative;
   min-height: 100%;
   background-image: url('/images/bg-pattern-top-desktop.svg'),
-    url('/images/bg-pattern-top-desktop.svg');
+    url('/images/bg-pattern-bottom-desktop.svg');
   background-position: top left, bottom right;
   background-repeat: no-repeat;
 }
+
+// Main styles //
 
 .main {
   position: absolute;
@@ -151,4 +153,77 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+// Media Queries //
+
+@media only screen and (max-width: 1350px) {
+  html {
+    font-size: 90%;
+  }
+
+  .main {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 80%;
+  }
+
+  body {
+    background-image: url('/images/bg-pattern-top-mobile.svg');
+  }
+
+  .main {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin: 5rem auto;
+    width: 300px;
+
+    &__top,
+    &__bottom {
+      flex-direction: column;
+    }
+  }
+
+  .asides {
+    &__aside {
+      width: 300px;
+      text-align: center;
+    }
+
+    &__aside:first-child,
+    &__aside:nth-child(2),
+    &__aside:last-child {
+      margin-right: 1rem;
+      align-self: center;
+    }
+
+    &__aside-stars {
+      display: block;
+      position: relative;
+      bottom: 2rem;
+      float: none;
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .card {
+    margin: 2rem 0;
+    text-align: left;
+
+    &:nth-child(2) {
+      margin: 0 0;
+      align-self: center;
+    }
+
+    &:nth-child(3) {
+      margin: 2rem 0;
+      align-self: center;
+    }
+  }
 }
