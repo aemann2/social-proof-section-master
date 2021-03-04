@@ -13,7 +13,6 @@ html {
   font-size: 15px;
   font-family: 'Spartan', sans-serif;
   font-weight: 500;
-  height: 100%;
 }
 *,
 *:before,
@@ -27,8 +26,10 @@ html {
 }
 
 body {
-  position: relative;
-  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-image: url('../images/bg-pattern-top-desktop.svg'),
     url('../images/bg-pattern-bottom-desktop.svg');
   background-position: top left, bottom right;
@@ -38,10 +39,6 @@ body {
 // Main styles //
 
 .main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 1300px;
 
   &__top,
